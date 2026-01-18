@@ -182,6 +182,7 @@ header {
   font-family: "SF Pro Display", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  color: #858585;
 }
 
 .img-wrapper, .more-information {
@@ -267,7 +268,7 @@ header {
 .events {
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
@@ -360,7 +361,7 @@ header {
 }
 
 .event-arrow i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   transform: rotate(-10deg);
   color: #000;
 }
@@ -388,6 +389,7 @@ header {
   font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 
@@ -479,6 +481,7 @@ header {
 
 .news-meta span i{
   margin-left: 18rem;
+  font-size: 25px;
 }
 
 .discover-btn{
@@ -514,10 +517,12 @@ header {
 .more-info-content h2{
   font-size: 40px;
   font-weight: 700;
+  line-height: 48px;
 }
 .more-info-content p{
   font-size: 14px;
   font-weight: 400;
+  line-height: 16px;
 }
 
 .more-info-content h2, .more-info-content p{
@@ -534,6 +539,10 @@ header {
   font-size: 16px;
   cursor: pointer;
   font-family: "SF Pro Display", sans-serif;
+}
+
+.more-info-btn i{
+  font-size: 25px;
 }
 
 /* RESPONSIVE */

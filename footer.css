@@ -1,4 +1,4 @@
-/* ===== FOOTER ===== */
+
 .site-footer {
   background: #1B2730;
   color: #fff;
@@ -6,7 +6,6 @@
   font-family: inherit;
 }
 
-/* MAIN GRID */
 .footer-container {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr 1.5fr;
@@ -14,7 +13,7 @@
   align-items: start;
 }
 
-/* LOGOS */
+
 .footer-logos {
   display: flex;
   gap: 1rem;
@@ -22,11 +21,10 @@
 
 .footer-logos img {
   width: 100%;
-  max-width: 250px; /* scale down for smaller screens */
+  max-width: 250px; 
   height: auto;
 }
 
-/* COLUMNS */
 .footer-col h4 {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -75,7 +73,7 @@
 }
 
 .newsletter-form button {
-  min-width: 80px; /* allow shrinking */
+  min-width: 80px; 
   background: #2c3e50;
   color: #fff;
   border-radius: 999px;
@@ -85,7 +83,7 @@
   font-size: 0.85rem;
 }
 
-/* BOTTOM BAR */
+
 .footer-bottom {
   border: none;
   margin-top: 2rem;
@@ -97,7 +95,7 @@
   flex-wrap: wrap;
 }
 
-/* SOCIAL ICONS */
+/* Social-icons */
 .footer-socials a {
   color: #fff;
   margin-left: 0.6rem;
@@ -115,8 +113,6 @@
   padding: 2px;
   border-radius: 5px;
 }
-
-/* ================== RESPONSIVE ================== */
 
 /* Tablets: 601px – 992px */
 @media (min-width: 601px) and (max-width: 992px) {

@@ -1,0 +1,833 @@
+*, body {
+  margin: 0;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 3.5rem;
+}
+
+/* LOGO */
+.hd-img-sec img {
+  width: 10rem;
+  height: auto;
+  margin-right: 1.5rem;
+}
+
+/* NAVIGATION */
+.hd-nav-sec {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-section {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.header-section li:hover{
+  color: #4B9CD2;
+  cursor: pointer;
+}
+
+/* SIGN UP */
+.sign-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 1.5rem;
+}
+
+.sign-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* ICON ROTATION */
+.bx-right-arrow-alt {
+  rotate: 310deg;
+}
+
+/* IMAGE SECTION */
+.img-section {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-section img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: bottom center;
+  clip-path: ellipse(120% 82% at 50% 0%);
+  background-color: rgba(233, 223, 224, 0.6); 
+  position: relative;
+  z-index: 0;
+}
+
+.img-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(4, 24, 37, 0.5);
+  pointer-events: none;
+  clip-path: ellipse(120% 82% at 50% 0%);
+  z-index: 1;
+}
+
+.text-sec{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 90%;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.text-sec h1, .text-sec p, .text-sec .btn-details{
+  margin: 0.5rem;
+}
+
+.text-sec h1 {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.text-sec p {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.btn-details{
+  padding: 0.8rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #FCB826;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.mission, .latest-news{
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+
+.mission img{
+  width: 100%;
+  height: auto;
+  display: block;
+  clip-path: ellipse(140% 90% at 50% 0%);
+  margin-bottom: 0%;
+}
+
+.mission::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(184, 188, 249, 0)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mission-text-sec{
+  position: absolute;
+  z-index: 2;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.mission-text-sec h1{
+  margin-bottom: 1.5rem;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.mission-text-sec p {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.img-wrapper, .more-information {
+  position: relative;
+  overflow: hidden;
+}
+
+/* main image normal */
+.img-wrapper img {
+  width: 100%;
+  height: 900px;
+  display: block;
+  clip-path: ellipse(160% 90% at 50% 0%);
+  position: relative;
+}
+
+/* top ellipse curve */
+.img-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180%;
+  height: 60%;
+  background: white;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.latest-news {
+  position: relative;
+}
+
+.img-wrapper::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 163, 255, 0.5);
+  clip-path: ellipse(160% 90% at 50% 0%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shared-video {
+  position: relative;
+  z-index: 5;
+  margin-top: -24rem;
+  margin-bottom: -7.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.shared-video video {
+  width: 75%;
+  border-radius: 15px;
+  background: #000;
+}
+
+.latest-events{
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.latest-events h2 {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.latest-events p {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* EVENTS WRAPPER */
+.events {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 90%;
+  max-width: 992px;
+}
+
+/* CARD */
+.event-card {
+  background: #ffff;
+  border-radius: 8px;
+  box-shadow: none;
+  overflow: hidden;
+  width: 100%;
+  min-width: unset;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* ROWS */
+.event-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FIRST ROW */
+.event-row:first-child {
+  padding: 1.5rem 2rem;
+}
+
+/* SECOND ROW */
+.event-venue-row {
+  border-top: 1px solid #000;
+  padding: 1rem 2rem;
+}
+
+/* COLUMNS */
+.event-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* DATE & TIME */
+.event-meta {
+  display: flex;
+  gap: 2rem;
+  font-size: .9rem;
+  color: #555;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.event-meta time {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+/* TITLE */
+.event-title {
+  margin: .6rem 0 .3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* ORGANIZER */
+.event-org {
+  font-size: .95rem;
+  color: #4B9CD2;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* ARROW COLUMN */
+.event-action {
+  justify-content: center;
+  align-items: center;
+}
+
+.event-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.event-arrow i {
+  font-size: 2rem;
+  transform: rotate(-10deg);
+  color: #000;
+}
+
+/* VENUE */
+.event-venue {
+  font-style: normal;
+  font-size: .9rem;
+  color: #444;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.news{
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.news h2{
+  font-size: 48px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.news p {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* NEWS GRID */
+.news-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 5rem 0 5rem;
+}
+
+/* CARD */
+.news-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* REVERSE LAYOUT */
+.news-card.reverse {
+  grid-template-columns: 1fr 1fr;
+  border: none;
+}
+
+.news-card.reverse .news-image {
+  order: 2;
+}
+
+/* IMAGE */
+.news-image {
+  width: 100%;
+  height: 70%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.treatment{
+  height: 85%;
+  margin-top: 2rem;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+.news-content {
+  text-align: left;
+}
+
+.news-tag {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.news-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* META */
+.news-meta {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: #777;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.news-meta span i{
+  margin-left: 18rem;
+}
+
+.discover-btn{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.more-information {
+  min-height: 250px;
+  margin: 0 5rem 2rem 5rem; 
+  border-radius: 14px;
+  background: 
+    linear-gradient(to right, rgba(32,116,173,.85), rgba(32,116,173,.65)),
+    url("./images/more-information.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.more-info-content {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.more-info-content h2, .more-info-content p{
+  padding-bottom: 1rem;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.more-info-btn {
+  background: #fcb826;
+  border: 0;
+  padding: .6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .news-card,
+  .news-card.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .news-card.reverse .news-image {
+    order: 0;
+  }
+}
+
+/* for tablets */
+@media (min-width: 600px) and (max-width: 992px){
+  .img-section{
+    height: 400px;
+  }
+
+  .hd-img-sec img {
+    width: 12rem;
+  }
+
+  .header-section {
+    gap: 1.5rem;
+  }
+
+  .sign-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .events {
+    top: 53%;
+    grid-template-columns: 1fr 1fr;
+    width: 92%;
+    gap: 1.5rem;
+  }
+
+  .event-title {
+    font-size: 1.05rem;
+  }
+
+  .mission img {
+    height: 700px;
+    object-fit: cover;
+  }
+
+  .mission-text-sec {
+    top: 22%;
+    width: 85%;
+  }
+
+  .mission-text-sec p {
+    line-height: 1.6;
+  }
+
+  .mission img {
+    clip-path: ellipse(140% 65% at 50% 0%);
+  }
+
+  .img-wrapper img{
+    height: 1100px;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .img-section {
+    height: 480px;
+  }
+
+  .hd-img-sec img {
+    width: 13rem;
+  }
+
+  .header-section {
+    gap: 2rem;
+  }
+
+  .sign-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .text-sec h1 {
+    white-space: nowrap;
+    font-size: clamp(1rem, 3.5vw, 2.5rem);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .img-section {
+    height: 370px;
+    margin-top: 0.5rem;
+  }
+
+  .img-section img,
+  .img-section::before {
+    clip-path: ellipse(130% 100% at 50% 0%);
+  }
+
+  .hd-img-sec img {
+    width: 9rem;
+  }
+
+  .hd-nav-sec {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-section {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .sign-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-btn {
+    width: fit-content;
+  }
+
+  .btn-details{
+    padding: 0.6rem 1.1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #FCB826;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .text-sec{
+    margin-top: 3rem;
+  }
+
+  .events {
+    grid-template-columns: 1fr;
+    width: 94%;
+    gap: 1.2rem;
+  }
+
+  .event-row:first-child {
+    padding: 1rem 1.2rem;
+  }
+
+  .event-venue-row {
+    padding: .8rem 1.2rem;
+  }
+
+  .event-title {
+    font-size: 1rem;
+  }
+
+  .event-meta {
+    flex-wrap: wrap;
+    gap: .8rem;
+  }
+
+  .mission img {
+    height: 900px; /* image grows so content is not cut */
+  }
+
+  .mission-text-sec {
+    top: 25%;
+    width: 92%;
+  }
+
+  .mission-text-sec h1 {
+    margin-bottom: 1rem;
+  }
+
+  .mission-text-sec p {
+    line-height: 1.7;
+  }
+
+  .mission img {
+    clip-path: ellipse(120% 60% at 50% 0%);
+  }
+
+  .img-wrapper img{
+    height: 1650px;
+  }
+
+  .latest-events{
+    top: 15%;
+  }
+  
+  .news-field{
+    padding: 2rem;
+  }
+
+  .news-field, .news-content{
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .news-image{
+    width: 300px;
+    text-align: center;
+  }
+
+  .news-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .news-meta span i{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 320px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .img-section {
+    height: 360px;
+    margin-top: 0.5rem;
+  }
+
+  .img-section img,
+  .img-section::before {
+    clip-path: ellipse(150% 100% at 50% 0%);
+  }
+
+  .hd-img-sec img {
+    width: 9rem;
+  }
+
+  .hd-nav-sec {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-section {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .sign-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-btn {
+    width: fit-content;
+  }
+
+  .btn-details{
+    padding: 0.6rem 1.1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #FCB826;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .events {
+    grid-template-columns: 1fr;
+    width: 96%;
+    gap: 1rem;
+  }
+
+  .event-title {
+    font-size: .95rem;
+  }
+
+  .event-org,
+  .event-venue {
+    font-size: .85rem;
+  }
+
+  .event-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .mission img {
+    height: 1000px;
+  }
+
+  .mission-text-sec {
+    top: 28%;
+  }
+
+  .mission img {
+    clip-path: ellipse(200% 95% at 50% 0%);
+  }
+
+  .news-field, .news-content{
+    padding: .5rem;
+  }
+
+  .news-image, .news-content{
+    width: 300px;
+  }
+}

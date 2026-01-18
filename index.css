@@ -110,10 +110,14 @@ header {
 
 .text-sec h1 {
   font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
 }
 
 .text-sec p {
   font-family: "SF Pro Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .btn-details{
@@ -122,7 +126,8 @@ header {
   border: none;
   background-color: #FCB826;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 16px;
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -170,10 +175,14 @@ header {
 .mission-text-sec h1{
   margin-bottom: 1.5rem;
   font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
 }
 
 .mission-text-sec p {
   font-family: "SF Pro Display", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .img-wrapper, .more-information {
@@ -246,10 +255,14 @@ header {
 
 .latest-events h2 {
   font-family: "SF Pro Display", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
 }
 
 .latest-events p {
   font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* EVENTS WRAPPER */
@@ -314,19 +327,22 @@ header {
   display: flex;
   align-items: center;
   gap: .4rem;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* TITLE */
 .event-title {
   margin: .6rem 0 .3rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   font-family: "SF Pro Display", sans-serif;
 }
 
 /* ORGANIZER */
 .event-org {
-  font-size: .95rem;
+  font-size: 14px;
+  font-weight: 400;
   color: #4B9CD2;
   font-family: "SF Pro Display", sans-serif;
 }
@@ -357,7 +373,8 @@ header {
 /* VENUE */
 .event-venue {
   font-style: normal;
-  font-size: .9rem;
+  font-size: 14px;
+  font-weight: 400;
   color: #444;
   font-family: "SF Pro Display", sans-serif;
 }
@@ -369,11 +386,14 @@ header {
 
 .news h2{
   font-size: 48px;
+  font-weight: 500;
   font-family: "SF Pro Display", sans-serif;
 }
 
 .news p {
   font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* NEWS GRID */
@@ -433,14 +453,15 @@ header {
   padding: 0.3rem 0.9rem;
   border: 1px solid #ccc;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 12px;
+  font-weight: 400;
   margin-bottom: 1rem;
   font-family: "SF Pro Display", sans-serif;
 }
 
 .news-content h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   margin-bottom: 1rem;
   font-family: "SF Pro Display", sans-serif;
 }
@@ -470,11 +491,13 @@ header {
   margin-top: 2rem;
   margin-bottom: 4rem;
   font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .more-information {
-  min-height: 250px;
-  margin: 0 5rem 2rem 5rem; 
+  min-height: 300px;
+  margin: 0 4rem 2rem 4rem; 
   border-radius: 14px;
   background: 
     linear-gradient(to right, rgba(32,116,173,.85), rgba(32,116,173,.65)),
@@ -494,6 +517,15 @@ header {
   font-family: "SF Pro Display", sans-serif;
 }
 
+.more-info-content h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+.more-info-content p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .more-info-content h2, .more-info-content p{
   padding-bottom: 1rem;
   font-family: "SF Pro Display", sans-serif;
@@ -504,7 +536,8 @@ header {
   border: 0;
   padding: .6rem 1.4rem;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 16px;
   cursor: pointer;
   font-family: "SF Pro Display", sans-serif;
 }
